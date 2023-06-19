@@ -108,7 +108,7 @@ export default {
       if (state.categories[key]) {
         const [deletedTask] = state.categories[key].tasks.splice(index, 1);
         if (deletedTask.checked) {
-          state.categories[key] -= 1;
+          state.categories[key].checkedCount -= 1;
         }
       }
       return state;
