@@ -88,7 +88,8 @@ export default {
     onFocus() {
       this.focused = true;
     },
-    onBlur() {
+    onBlur(e) {
+      this.onBlurInput(e);
       this.focused = false;
     },
   },
